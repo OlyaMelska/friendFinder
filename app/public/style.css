@@ -1,0 +1,95 @@
+body {
+    color: #fab942;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.dropdown-menu {
+    color: #fab942;
+}
+
+input {
+    width: 400px;
+    color: #703178;
+}
+
+.dropdown-item:hover {
+    background: #fab942;
+    color: #fff;
+}
+
+.header {
+    height: 25vh;
+    padding-top: 70px;
+    font-size: 54px;
+}
+
+header {
+    height: 20%;
+    padding-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #703178;
+    font-size: 22px;
+}
+
+.btn-warning {
+    background: #fab942;
+    color: #fff;
+}
+
+.btn-light {
+    color: #703178;
+}
+
+button:hover {
+    color: #703178;
+}
+
+.main {
+    height: 50vh;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #fab942;
+}
+
+a:hover {
+    color: #703178;
+    text-decoration: none;
+}
+
+.absolute {
+    position: absolute;
+    left: 30px;
+}
+
+#logo {
+    width: 250px;
+    height: 250px;
+}
+
+.margins {
+    margin-top: 50px;
+}
+
+#header-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    height: 25vh;
+    padding-top: 70px;
+}
+
+footer {
+    height: 20%;
+    padding-top: 5%;
+}
