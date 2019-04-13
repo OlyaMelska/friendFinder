@@ -37,12 +37,20 @@ h2 {
     font-size: 22px;
 }
 
-.btn-warning {
+select {
+    padding: 2px;
     background: #fab942;
-    color: #fff;
+    color: #703178;
+    height: 35px;
+    border: 0px;
 }
 
-.btn-light {
+select:hover {
+    opacity: 0.9;
+}
+
+.btn-warning {
+    background: #fab942;
     color: #703178;
 }
 

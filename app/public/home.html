@@ -21,6 +21,111 @@
     <link rel="stylesheet" href="style.css" />
     <!--Logo Icon Link-->
     <link rel="icon" type="image/jpeg" href="../images/logo.png" />
+    <style>
+      body {
+        color: #fab942;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        font-family: "Chelsea Market", cursive;
+      }
+
+      .dropdown-menu {
+        color: #fab942;
+      }
+
+      input {
+        width: 400px;
+        color: #703178;
+      }
+
+      .dropdown-item:hover {
+        background: #fab942;
+        color: #fff;
+      }
+
+      .header {
+        height: 25vh;
+        padding-top: 70px;
+        font-size: 54px;
+      }
+
+      header {
+        height: 20%;
+        padding-top: 20px;
+      }
+
+      h2 {
+        margin-top: 20px;
+        color: #703178;
+        font-size: 22px;
+      }
+
+      select {
+        padding: 2px;
+        background: #fab942;
+        color: #703178;
+        height: 35px;
+        border: 0px;
+      }
+
+      select:hover {
+        opacity: 0.9;
+      }
+
+      .btn-warning {
+        background: #fab942;
+        color: #703178;
+      }
+
+      button:hover {
+        color: #703178;
+      }
+
+      .main {
+        height: 50vh;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fab942;
+      }
+
+      a:hover {
+        color: #703178;
+        text-decoration: none;
+      }
+
+      .absolute {
+        position: absolute;
+        left: 30px;
+      }
+
+      #logo {
+        width: 250px;
+        height: 250px;
+      }
+
+      .margins {
+        margin-top: 50px;
+      }
+
+      #header-logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .footer {
+        height: 25vh;
+        padding-top: 70px;
+      }
+
+      footer {
+        height: 20%;
+        padding-top: 5%;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -35,12 +140,12 @@
         <p>Press start to fill out the survey in order to find you friend.</p>
       </div>
       <div>
-        <a href="survey.html"
+        <a href="/survey"
           ><button class="btn btn-warning" id="start-btn">Start</button></a
         >
       </div>
       <div class="absolute">
-        <a href="api/friends"> API Friends List</a> |
+        <a href="/api/friends"> API Friends List</a> |
         <a href="https://github.com/OlyaMelska/friendFinder">Git Hub Repo</a>
       </div>
     </main>
@@ -68,5 +173,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script>
+      let answers = document.getElementsByClassName("answers");
+      let arrOfNumb = [];
+      console.log(answers);
+      for (let i = 0; i < 10; i++) {
+        console.log(answers[i]);
+        let value = answers[i].options[answers[i].selectedIndex].value;
+        console.log(`value ${i} = ${value}`);
+        arrOfNumb.push(value);
+      }
+      arrOfNumb.forEach(element => {
+        console.log(element);
+      });
+    </script>
   </body>
 </html>

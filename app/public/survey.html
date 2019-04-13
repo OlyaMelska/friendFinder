@@ -21,6 +21,111 @@
     <link rel="stylesheet" href="style.css" />
     <!--Logo Icon Link-->
     <link rel="icon" type="image/jpeg" href="../images/logo.png" />
+    <style>
+      body {
+        color: #fab942;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        font-family: "Chelsea Market", cursive;
+      }
+
+      .dropdown-menu {
+        color: #fab942;
+      }
+
+      input {
+        width: 400px;
+        color: #703178;
+      }
+
+      .dropdown-item:hover {
+        background: #fab942;
+        color: #fff;
+      }
+
+      .header {
+        height: 25vh;
+        padding-top: 70px;
+        font-size: 54px;
+      }
+
+      header {
+        height: 20%;
+        padding-top: 20px;
+      }
+
+      h2 {
+        margin-top: 20px;
+        color: #703178;
+        font-size: 22px;
+      }
+
+      select {
+        padding: 2px;
+        background: #fab942;
+        color: #703178;
+        height: 35px;
+        border: 0px;
+      }
+
+      select:hover {
+        opacity: 0.9;
+      }
+
+      .btn-warning {
+        background: #fab942;
+        color: #703178;
+      }
+
+      button:hover {
+        color: #703178;
+      }
+
+      .main {
+        height: 50vh;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fab942;
+      }
+
+      a:hover {
+        color: #703178;
+        text-decoration: none;
+      }
+
+      .absolute {
+        position: absolute;
+        left: 30px;
+      }
+
+      #logo {
+        width: 250px;
+        height: 250px;
+      }
+
+      .margins {
+        margin-top: 50px;
+      }
+
+      #header-logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .footer {
+        height: 25vh;
+        padding-top: 70px;
+      }
+
+      footer {
+        height: 20%;
+        padding-top: 5%;
+      }
+    </style>
   </head>
 
   <body>
@@ -28,6 +133,7 @@
       <img src="../images/logo.png" alt="logo" id="header-logo" />
     </header>
     <main>
+      <h2>About You</h2>
       <form>
         <input type="text" placeholder="your name" id="name" />
         <input type="email" placeholder="link to your photo" id="photo" />
@@ -36,28 +142,14 @@
       <div>
         <h2>Question 1</h2>
         <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -68,28 +160,14 @@
           Generally speaking, you rely more on your experience than your
           imagination.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -100,28 +178,14 @@
           You find it easy to stay relaxed and focused even when there is some
           pressure.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -129,28 +193,14 @@
       <div>
         <h2>Question 4</h2>
         <p>You rarely do something just out of sheer curiosity.</p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -160,28 +210,14 @@
         <p>
           People can rarely upset you.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button" value="1">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button" value="2">2</button>
-            <button class="dropdown-item" type="button" value="3">3</button>
-            <button class="dropdown-item" type="button" value="4">4</button>
-            <button class="dropdown-item" type="button" value="5">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -191,28 +227,14 @@
         <p>
           It is often difficult for you to relate to other people’s feelings.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -223,28 +245,14 @@
           In a discussion, truth should be more important than people’s
           sensitivities.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -254,28 +262,14 @@
         <p>
           You rarely get carried away by fantasies and ideas.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -286,28 +280,14 @@
           You think that everyone’s views should be respected regardless of
           whether they are supported by facts or not.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
 
       <!--New Question-->
@@ -317,39 +297,27 @@
         <p>
           You feel more energetic after spending time with a group of people.
         </p>
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-warning dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Select the answer
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              1 (strongly agree)
-            </button>
-            <button class="dropdown-item" type="button">2</button>
-            <button class="dropdown-item" type="button">3</button>
-            <button class="dropdown-item" type="button">4</button>
-            <button class="dropdown-item" type="button">
-              5 (strongly disagree)
-            </button>
-          </div>
-        </div>
+        <select class="answers" required>
+          <option></option>
+          <option value="1">1 (strongly agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly disagree)</option>
+        </select>
       </div>
       <div class="absolute">
-        <a href="api/friends"> API Friends List</a> |
+        <a href="/api/friends"> API Friends List</a> |
         <a href="https://github.com/OlyaMelska/friendFinder">Git Hub Repo</a>
       </div>
     </main>
+
     <!--Modal Result-->
+
     <!-- Button trigger modal -->
     <button
-      type="button"
-      class="btn btn-light margins"
+      type="submit"
+      class="btn btn-warning margins"
       data-toggle="modal"
       data-target="#exampleModalLong"
       id="submit"
@@ -370,7 +338,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">
-              Here's your results
+              Here's your match
             </h5>
             <button
               type="button"
@@ -416,5 +384,78 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script>
+      let submitBtn = document.getElementById("submit");
+      let arrOfNumb2 = [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
+      let newFriend = {};
+      submitBtn.addEventListener("click", () => {
+        event.preventDefault();
+        // {
+        //     name: "Ahmed",
+        //         photo:
+        //     "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        //         scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        // }
+        let name = document.getElementById("name").value;
+        let photo = document.getElementById("photo").value;
+        newFriend = {
+          name: name,
+          photo: photo,
+          scores: arrOfNumb2
+        };
+        console.log(name, photo, arrOfNumb2);
+        $.post("/api/friends", newFriend).then(response => {
+          console.log("Response" + response);
+          alert("Successfully");
+        });
+        $.get("/api/friends").then(response => {
+          console.log("ok", response);
+          let foundFriend = findMatch(response, newFriend);
+          let h2 = $("<h2>");
+          let img = $("<img>");
+          let imgDiv = $("<div>");
+          h2.text(foundFriend.name);
+          img.attr("src", foundFriend.url);
+          imgDiv.append(img);
+          $(".result-div").append(h2, imgDiv);
+          console.log(
+            `your match:\nname: ${foundFriend.name} photo: ${foundFriend.url}`
+          );
+        });
+      });
+
+      let findMatch = (data, currentUser) => {
+        //Function that finds a user with the smallest difference in answerder questions
+        let arr = []; //to store total diffrences and name
+        let totalDifferenceArr = []; //to store just total difference
+        let friendResult = ""; //function will return the name
+        data.forEach(element => {
+          let sum = 0;
+          let obj = {}; //to save name and total difference for each element of data array
+          for (let i = 0; i < element.scores.length; i++) {
+            let numb = Math.abs(element.scores[i] - currentUser.scores[i]);
+            sum += numb; //calculating an absolute diffrence
+            obj = {
+              name: element.name,
+              url: element.photo,
+              totalDifference: sum
+            };
+          }
+          arr.push(obj); //saving names & sums
+          totalDifferenceArr.push(sum); //saving just sums
+        });
+
+        let result = Math.min.apply(null, totalDifferenceArr); //looking for the smallest value
+        arr.forEach(element => {
+          if (element.totalDifference === result) {
+            friendResult = element;
+            console.log("Element ", friendResult);
+          } else {
+            friendResult = "No match found";
+          }
+        });
+        return friendResult;
+      };
+    </script>
   </body>
 </html>
