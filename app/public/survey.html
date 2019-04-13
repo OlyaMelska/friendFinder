@@ -404,11 +404,11 @@
           scores: arrOfNumb2
         };
         console.log(name, photo, arrOfNumb2);
-        $.post("/api/friends", newFriend).then(response => {
+        $.get("/api/friends", newFriend).then(response => {
           console.log("Response" + response);
           alert("Successfully");
         });
-        $.get("/api/friends").then(response => {
+        $.post("/api/friends").then(response => {
           console.log("ok", response);
           let foundFriend = findMatch(response, newFriend);
           let h2 = $("<h2>");

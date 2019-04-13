@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/OlyaMelska/friendFinder#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jquery": "^3.4.0",
+    "path": "^0.12.7"
   }
 }

@@ -5,10 +5,8 @@ let htmlRoutes = require("./app/routing/htmlRoutes");
 
 let PORT = 3030;
 
-app.use("./app/routing/apiRoutes", apiRoutes);
-app.use("./app/routing/htmlRoutes", htmlRoutes);
-// apiRoutes(PORT);
-// htmlRoutes(PORT);
+app.use("/", htmlRoutes);
+app.use("/api", apiRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server listening on: http://localhost:${PORT}`);
