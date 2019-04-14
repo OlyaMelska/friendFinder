@@ -1,42 +1,42 @@
-let submitBtn = document.getElementById("submit");
-let answers = document.getElementsByClassName("answers");
-let arrOfNumb = [];
-console.log(answers);
-for (let i = 0; i < 10; i++) {
-  console.log(answers[i]);
-  let value = answers[i].options[answers[i].selectedIndex].value;
-  console.log(`value ${i} = ${value}`);
-  arrOfNumb.push(value);
-}
-arrOfNumb.forEach(element => {
-  console.log(element);
-});
-let arrOfNumb2 = [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
+// let submitBtn = document.getElementById("submit");
+// let answers = document.getElementsByClassName("answers");
+// let arrOfNumb = [];
+// console.log(answers);
+// for (let i = 0; i < 10; i++) {
+//   console.log(answers[i]);
+//   let value = answers[i].options[answers[i].selectedIndex].value;
+//   console.log(`value ${i} = ${value}`);
+//   arrOfNumb.push(value);
+// }
+// arrOfNumb.forEach(element => {
+//   console.log(element);
+// });
+// let arrOfNumb2 = [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
 
-submitBtn.addEventListener("click", () => {
-  event.preventDefault();
+// submitBtn.addEventListener("click", () => {
+//   event.preventDefault();
 
-  let name = document.getElementById("name").value;
-  let photo = document.getElementById("photo").value;
-  let newFriend = {
-    name: name,
-    photo: photo,
-    scores: arrOfNumb2
-  };
-  console.log(name, photo);
-  $.post("/api/friends", newFriend).then(response => {
-    console.log("Response" + response);
-    alert("Successfully");
-  });
-});
-$.get("/api/friends").then(response => {
-  console.log("ok", response);
-  response.forEach(element => {
-    let name = document.createElement("h2");
-    name.innerHTML = element;
-    $("#result-div").append(name);
-  });
-});
+//   let name = document.getElementById("name").value;
+//   let photo = document.getElementById("photo").value;
+//   let newFriend = {
+//     name: name,
+//     photo: photo,
+//     scores: arrOfNumb2
+//   };
+//   console.log(name, photo);
+//   $.post("/api/friends", newFriend).then(response => {
+//     console.log("Response" + response);
+//     alert("Successfully");
+//   });
+// });
+// $.get("/api/friends").then(response => {
+//   console.log("ok", response);
+//   response.forEach(element => {
+//     let name = document.createElement("h2");
+//     name.innerHTML = element;
+//     $("#result-div").append(name);
+//   });
+// });
 
 // let friends = [
 //   {

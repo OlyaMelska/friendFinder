@@ -20,7 +20,11 @@
     <!--Styles CSS-->
     <link rel="stylesheet" href="style.css" />
     <!--Logo Icon Link-->
-    <link rel="icon" type="image/jpeg" href="../images/logo.png" />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="https://github.com/OlyaMelska/friendFinder/blob/master/app/images/logo.png?raw=true"
+    />
     <style>
       body {
         color: #fab942;
@@ -30,47 +34,16 @@
         font-family: "Chelsea Market", cursive;
       }
 
-      .dropdown-menu {
-        color: #fab942;
-      }
-
-      input {
-        width: 400px;
-        color: #703178;
-      }
-
-      .dropdown-item:hover {
-        background: #fab942;
-        color: #fff;
-      }
-
       .header {
         height: 25vh;
         padding-top: 70px;
         font-size: 54px;
       }
 
-      header {
-        height: 20%;
-        padding-top: 20px;
-      }
-
       h2 {
         margin-top: 20px;
         color: #703178;
         font-size: 22px;
-      }
-
-      select {
-        padding: 2px;
-        background: #fab942;
-        color: #703178;
-        height: 35px;
-        border: 0px;
-      }
-
-      select:hover {
-        opacity: 0.9;
       }
 
       .btn-warning {
@@ -118,12 +91,7 @@
 
       .footer {
         height: 25vh;
-        padding-top: 70px;
-      }
-
-      footer {
-        height: 20%;
-        padding-top: 5%;
+        padding-top: 120px;
       }
     </style>
   </head>
@@ -133,9 +101,13 @@
     </header>
     <main class="main">
       <div>
-        <img src="../images/logo.png" alt="logo" id="logo" />
+        <img
+          src="https://github.com/OlyaMelska/friendFinder/blob/master/app/images/logo.png?raw=true"
+          alt="logo"
+          id="logo"
+        />
       </div>
-      <div>
+      <div class="margins">
         <p>Welcome to Friend Finder!</p>
         <p>Press start to fill out the survey in order to find you friend.</p>
       </div>
@@ -173,19 +145,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
-    <script>
-      let answers = document.getElementsByClassName("answers");
-      let arrOfNumb = [];
-      console.log(answers);
-      for (let i = 0; i < 10; i++) {
-        console.log(answers[i]);
-        let value = answers[i].options[answers[i].selectedIndex].value;
-        console.log(`value ${i} = ${value}`);
-        arrOfNumb.push(value);
-      }
-      arrOfNumb.forEach(element => {
-        console.log(element);
-      });
-    </script>
   </body>
 </html>

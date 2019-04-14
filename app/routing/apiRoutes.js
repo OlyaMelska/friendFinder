@@ -1,7 +1,11 @@
 let express = require("express");
+let app = express();
 let data = require("../data/friends");
 let router = express.Router();
 let path = require("path");
+
+app.use(express.json()); // for parsing application/json
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 router.use(function timeLog(req, res, next) {
   console.log("INSIDE API ROUTES");
