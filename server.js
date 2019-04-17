@@ -5,7 +5,7 @@ let htmlRoutes = require("./app/routing/htmlRoutes");
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-let PORT = 3030;
+let PORT = process.env.PORT || 3030;
 
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
